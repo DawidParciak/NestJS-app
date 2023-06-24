@@ -15,4 +15,9 @@ export class UpdateOrderDTO {
   @IsString()
   @Length(5, 50)
   address: string;
+
+  @IsNotEmpty()
+  @IsString()
+  @IsUUID()
+  clientId: string;
 }
